@@ -167,7 +167,7 @@ class Embed:
             except KeyError:
                 continue
             else:
-                setattr(self, '_' + attr, value)
+                setattr(self, '_' + attr, value.copy())
 
         return self
 
